@@ -9,5 +9,5 @@ while N > 0:
 print(mass)
 
 for k in range (0, N):
-   mass[k] = mass[k-1] - mass[k]
+   mass[k] = mass[k] - mass[k-1]
 print(mass)
