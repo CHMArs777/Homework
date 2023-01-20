@@ -1,13 +1,15 @@
 from random import randint
-N = int(input('Введите количество'))
 mass = []
-i = 0
-while N > 0:
- i = randint(0,10)
- mass.append(i)
- N -=1
+zamena = 0
+k = 0
+for i in range (0,20):
+   mass.append(randint(0,100))
 print(mass)
 
-for k in range (0, N):
-   mass[k] = mass[k] - mass[k-1]
-print(mass)
+for i in range (0,len(mass)):
+ for j in range(0,len(mass)):
+  if mass[i] < mass[j]:
+   zamena = mass[i]
+   mass[i] = mass[j]
+   mass[j] = zamena
+print (mass)
