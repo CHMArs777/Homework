@@ -20,13 +20,19 @@ else:
     print ('Извини, на тебя шуток нет.')
     
  #№3
- s1 ='Список покупок:'
-s2 = 'Паучьи лапки'
-s3 ('Жабий палец')
-print ('Глаз тритона')
-print ('Крыло летучей мыши')
-print ('Жир слизня')
-print ('Кожа змеи')
+mass =[]
+mass.append('Паучьи лапки')
+mass.append('Жабий палец')
+mass.append('Глаз тритона')
+mass.append('Крыло летучей мыши')
+mass.append('Жир слизня')
+mass.append('Кожа змеи')
+print (mass[0])
+print (mass[1])
+print (mass[2])
+print (mass[3])
+print (mass[4])
+print (mass[5])
 def SpisokPokupok(tovar):
     print(tovar)
 SpisokPokupok('Мандрагора')
