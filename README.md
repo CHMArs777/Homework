@@ -20,13 +20,13 @@ else:
     print ('Извини, на тебя шуток нет.')
     
  #№3
-mass =[]
-mass.append('Паучьи лапки')
-mass.append('Жабий палец')
-mass.append('Глаз тритона')
-mass.append('Крыло летучей мыши')
-mass.append('Жир слизня')
-mass.append('Кожа змеи')
+spisok =[]
+spisok.append('Паучьи лапки')
+spisok.append('Жабий палец')
+spisok.append('Глаз тритона')
+spisok.append('Крыло летучей мыши')
+spisok.append('Жир слизня')
+spisok.append('Кожа змеи')
 print (mass[0])
 print (mass[1])
 print (mass[2])
