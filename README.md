@@ -1,31 +1,84 @@
 # Homework
-a = int(input('Введите номинал:'))
-if a == 1:
-    print('Джордж Вашингтон')
-elif a == 2:
-        print('Томас Джефферсон')
-elif a == 5:
-        print('Авраам Линкольн')
-elif a == 1:
-        print('Джордж Вашингтон')
-elif a == 10:
-        print('Александр Гамильтон')
-elif a == 20:
-        print('Эндрю Джексон')
-elif a == 50:
-        print('Улисс Грант')
-elif a == 100:
-        print('Бенджамин Франклин')
+#№1
+found = 20
+copym = 10
+vor = 3
+sber = ((copym * 365) + found) - vor * 52
+print(sber)
+
+#№2
+age = int(input('Введи свой возраст и получи шутку:'))
+if age == 10:
+    print('- Что будет, если клюква наденет штаны? –Брюква!')
+elif age == 11:
+    print ('- Что скала зелёная виноградина синей? – Дыши!,Дыши!')
+elif age == 12:
+    print('Что сказал 0 цифре 8? – Привет, ребята!')
+elif age == 13:
+    print('Что такое сидит на потолке и хохочет? – Мухахохотуха!')
 else:
-    print('ERROR!!!')
+    print ('Извини, на тебя шуток нет.')
+    
+ #№3
+ s1 ='Список покупок:'
+s2 = 'Паучьи лапки'
+s3 ('Жабий палец')
+print ('Глаз тритона')
+print ('Крыло летучей мыши')
+print ('Жир слизня')
+print ('Кожа змеи')
+def SpisokPokupok(tovar):
+    print(tovar)
+SpisokPokupok('Мандрагора')
+SpisokPokupok('Болиголов')
+SpisokPokupok('Болотный газ')
 
+#№4
+ves = int(input('Введите свой вес:'))
+for i in range (0,15):
+    lunves = ves * 0.165
+    print('Ваш лунный вес во время', i, 'полета:', lunves, 'кг')
+    ves +=1
+#№5
+banki = 500
+bankivned = 2
+ned = banki / bankivned
+def KolichestvoBanok (bankivned):
+    for i in range(0, 250):
+        i +=1
+        print('Расплющено банок в', i, 'неделю:', bankivned)
+        bankivned += 2
+KolichestvoBanok(bankivned)
 
+#№6
+import turtle
+turtle1 = turtle.Turtle()
+turtle2 = turtle.Turtle()
+turtle3 = turtle.Turtle()
+turtle4 = turtle.Turtle()
 
+turtle1.backward(200)
+turtle1.forward(200)
+turtle1.left(90)
+turtle1.forward(100)
+turtle1.right(90)
+turtle1.forward(100)
 
-kletka = str(input('Введите клетку на доске:'))
-if (kletka[0] == 'a' or kletka[0] == 'c' or kletka[0] == 'e' or kletka[0] == 'g') and (kletka[1] == '1' or kletka[1] == '3' or kletka[1] == '5' or kletka[1] == '7'):
-    print ('Черное')
-elif (kletka[0] == 'b' or kletka[0] == 'd' or kletka[0] == 'f' or kletka[0] == 'h') and (kletka[1] == '2' or kletka[1] == '4' or kletka[1] == '6' or kletka[1] == '8'):
-    print ('Черное')
-else:
-    print('Белое')
+turtle2.forward(20)
+turtle2.left(90)
+turtle2.forward(50)
+turtle2.right(90)
+turtle2.forward(50)
+
+turtle3.forward(20)
+turtle3.right(90)
+turtle3.forward(50)
+turtle3.left(90)
+turtle3.forward(50)
+
+turtle4.right(90)
+turtle4.forward(100)
+turtle4.left(90)
+turtle4.forward(100)
+
+turtle.exitonclick()
