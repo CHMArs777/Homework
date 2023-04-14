@@ -50,10 +50,13 @@ banki = 500
 bankivned = 2
 ned = banki / bankivned
 def KolichestvoBanok (bankivned):
-    for i in range(0, 250):
+    for i in range(0, 365):
         i +=1
         print('Расплющено банок в', i, 'неделю:', bankivned)
         bankivned += 2
+        if bankivned >= 500:
+            print('банки закончились')
+            break
 KolichestvoBanok(bankivned)
 
 #№6
